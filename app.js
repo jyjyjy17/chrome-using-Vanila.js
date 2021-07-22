@@ -1,12 +1,18 @@
-const a = 5;
-const b = 2;
-let myName = "nice";
-console.log(myName);
-const amIFat = false;
-const amINull = null;
+const player = {
+    name : "nico",
+    points :10,
+    fat : true,
+    sayHello: function(){
+        console.log("hello!");
+    },
+};
 
-const mon = "mon", tue = "tue";
-const daysOfWeek = [mon,tue,"wed","thu","fri","sat","sun"];
-const nonsense = [0,1,true,"right"];
-console.log(daysOfWeek, nonsense);
-console.log(daysOfWeek[4]);
+console.log(player);
+console.log(player.fat);
+
+function sayHello(nameOfPerson,age){
+    console.log("Hello! I'm " + nameOfPerson);
+}
+sayHello("nico");
+
+player.sayHello(); 
